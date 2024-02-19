@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registristation form</title>
+</head>
+<body>
+<form action="./action.html">
+    <label for="name"> Enter name</label>
+   <input type="text" placeholder="Enter your full name"id="name"><br><br>
+
+   <label for="pass">Enter password  <span style="color: red; font-size: 15px;">*</span></label>
+    <input type="password" placeholder="enter your password" id="pass" required> <br><br>
+
+    <label for="address">enter address</label>
+   <textarea name="address" id="101" placeholder="enter your address" rows="5" id="address"></textarea><br><br>
+
+   <label for="num">mob number</label>
+   <input type="tel" id="num"placeholder="enter mob number" maxlength="10" required/><br><br>
+
+   <label for="email">Enter your Email</label>
+   <input type="email" id="email"placeholder="enter email" pattern="+@gmail.com" required/><br><br>
+
+   <label for="date">date of brith</label>
+   <input type ="date" id="date" name="date"><br><br>
+
+    <label>Gender</label>
+    <input type="radio" value="male" name="Gender"  id="male"> 
+    <label for="mele">male</label>
+    <input type="radio" value="female" name="Gender" id="female"> 
+    <label for="female">female</label>
+    <input type="radio" value="other" name="Gender"id="other"> 
+    <label for="other">other</label>
+    <br><br>
+
+    
+    <label for="c">
+        <input type="checkbox" name="subject" id="c" value="c" > C
+    </label>
+    <label for="c++">
+        <input type="checkbox" name="subject" id="c++" value="C++">C++
+    </label>
+    <label for="java">
+        <input type="checkbox" name="subject" id="java" value="java">JAVA
+     </label>
+     <label for="php">
+        <input type="checkbox" name="subject" id="php" value="php">PHP
+    </label>
+    <br><br>
+
+    <label for="city">City</label>
+    <select  id="city">
+    <option selected disabled> please select city</option>
+        <option value="pune">pune</option>
+        <option value="mumbai">mumbai</option>
+        <option value="solapur">solapur</option>
+        <option value="latur">Latur</option>
+ </select>
+ <input type="button" value="click me">
+ <input type="submit" value="submit">
+
+</form>
+</body>
+</html>
